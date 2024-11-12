@@ -57,8 +57,10 @@ Here’s an overview of the database structure:
 The following queries were created to solve specific business questions. Each query is designed to provide insights based on gym membership and visit data.
 
 1.Retrieve all details of members who have a Cancelled membership.
+'''sql
 select * from memberships
 where status='Cancelled'
+'''
 2.Find all members who are Male and have a Weekly membership type, and order the result by join_date.
 select * from memberships 
 where gender='M' and membership_type ='Weekly'
